@@ -19,13 +19,13 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Smm229\\Aliyunoss\\": "src/"
+			"smm229\\Aliyunoss\\": "src/"
 		}
 	},
 	"extra": {
 		"laravel": {
 			"providers": [
-				"Smm229\\Aliyunoss\\AliOssFormServiceProvider"
+				"smm229\\Aliyunoss\\AliOssFormServiceProvider"
 			]
 		}
 	}

@@ -1,6 +1,6 @@
 <?php
 
-namespace Smm229\Aliyunoss\Http\Controllers;
+namespace smm229\Aliyunoss\Http\Controllers;
 
 use Encore\Admin\Layout\Content;
 use Illuminate\Routing\Controller;

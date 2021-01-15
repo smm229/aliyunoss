@@ -25,7 +25,7 @@
 	"extra": {
 		"laravel": {
 			"providers": [
-				"Smm229\\Aliyunoss\\AliOssFormServiceProvider"
+				"smm229\\Aliyunoss\\AliOssFormServiceProvider"
 			]
 		}
 	}

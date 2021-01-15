@@ -1,6 +1,6 @@
 <?php
 
-namespace Smm229\Aliyunoss;
+namespace smm229\Aliyunoss;
 
 use Encore\Admin\Form\Field;
 

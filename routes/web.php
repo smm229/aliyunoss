@@ -1,6 +1,6 @@
 <?php
 
-use ssm229\LaravelAdminAliyunoss\Http\Controllers\OssFormController;
+use smm229\Aliyunoss\Http\Controllers\OssFormController;
 
 Route::get('alioss_param', OssFormController::class . '@getOssParam');
 

@@ -19,7 +19,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Ezreal\\AdminOss\\": "src/"
+			"Smm229\\Aliyunoss\\": "src/"
 		}
 	},
 	"extra": {

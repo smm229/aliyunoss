@@ -201,8 +201,8 @@
                     }else{
                         $('#'+file.id+'_canvas').remove();
                         //根据扩展名设置属性
-                        var img = ['jpg','jpeg','png','gif'];
-                        var video = ['mp4','flv','wmv','rmvb','mpeg','avi','mov','3gp'];
+                        var img = ['.jpg','.jpeg','.png','.gif'];
+                        var video = ['.mp4','.flv','.wmv','.rmvb','.mpeg','.avi','.mov','.3gp'];
                         if(img.indexOf(file_ext)){ //图片
                             upload_warp.prepend('<img data-filename="'+path+'" src="' + all_path +'?x-oss-process=image/resize,m_fill,w_100,h_100">').find('input.Js_upload_input').val(path);
                         }else if(video.indexOf(file_ext)){ //视频

@@ -26,7 +26,7 @@
                 @if($type==1)
                     <img data-filename="{{old($column, $value)}}" src="{{$imgs}}?x-oss-process=image/resize,m_fill,w_100,h_100">
                 @elseif($type==2)
-                    <video data-filename="{{old($column, $value)}}" src="{{$imgs}}?x-oss-process=video/snapshot,t_4000,f_jpg,w_240,h_135,m_fast" controls="" preload="none"></video>
+                    <video data-filename="{{old($column, $value)}}" src="{{$imgs}}" controls="" preload="none"></video>
                 @else
                     
                 @endif

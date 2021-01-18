@@ -200,7 +200,17 @@
                         $('#'+file.id).html('<span class="upload_del_btn" data-filename="'+path+'" onclick="'+ "del_pic(this,true)" +'">删除</span><img src="' + all_path +'?x-oss-process=image/resize,m_fill,w_100,h_100"><input type="hidden" class="Js_upload_input" name="'+id.split('_')[0]+'[]" value="'+path+'">');
                     }else{
                         $('#'+file.id+'_canvas').remove();
-                        upload_warp.prepend('<img data-filename="'+path+'" src="' + all_path +'?x-oss-process=image/resize,m_fill,w_100,h_100">').find('input.Js_upload_input').val(path);
+                        //根据扩展名设置属性
+                        var img = ['jpg','jpeg','png','gif'];
+                        var video = ['mp4','flv','wmv','rmvb','mpeg','avi','mov','3gp'];
+                        if(img.indexOf(file_ext)){ //图片
+                            upload_warp.prepend('<img data-filename="'+path+'" src="' + all_path +'?x-oss-process=image/resize,m_fill,w_100,h_100">').find('input.Js_upload_input').val(path);
+                        }else if(video.indexOf(file_ext)){ //视频
+                            upload_warp.prepend('<video data-filename="'+path+'" src="' + all_path +'?x-oss-process=video/snapshot,t_4000,f_jpg,w_240,h_135,m_fast" controls="" preload="none"></video>').find('input.Js_upload_input').val(path);
+                        }else{ //其他文件
+                            upload_warp.prepend('<span data-filename="'+path+'">' + all_path +'</span>').find('input.Js_upload_input').val(path);
+                        }
+
                     }
                 },
                 Error: function(up, err) {
